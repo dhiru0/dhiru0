@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crafted Honors | Custom Gifting & Awards</title>
+  <meta name="description" content="Premium custom gifting & awards studio offering acrylic trophies, wooden plaques, and decorative gifts." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">
+        <span>Crafted</span> Honors
+      </div>
+      <nav class="nav-links">
+        <a href="#products">Products</a>
+        <a href="#calculator">Pricing</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="cta" id="whatsapp-cta" type="button">Order on WhatsApp</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Premium custom gifting & awards</p>
+          <h1>Celebrate achievements with bespoke trophies and gifts.</h1>
+          <p class="subtitle">
+            Acrylic trophies, wooden plaques, and decorative gifting crafted with precision. Tailor every detail to your brand, event, or personal milestone.
+          </p>
+          <div class="hero-actions">
+            <button class="cta" id="hero-whatsapp" type="button">Get Price on WhatsApp</button>
+            <button class="ghost" id="hero-quote" type="button">Download Quotation (PDF)</button>
+          </div>
+          <div class="trust">
+            <div>
+              <span class="metric">500+</span>
+              <span class="label">Custom projects</span>
+            </div>
+            <div>
+              <span class="metric">48hr</span>
+              <span class="label">Priority fulfilment</span>
+            </div>
+            <div>
+              <span class="metric">4.9★</span>
+              <span class="label">Client rating</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Signature Collection</h3>
+          <ul>
+            <li>Laser-cut acrylic trophies</li>
+            <li>Premium wooden plaques</li>
+            <li>Decorative mixed-material gifts</li>
+            <li>Fully custom silhouettes</li>
+          </ul>
+          <div class="hero-card-footer">
+            <span>Design approval in 24 hours</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Product Categories</h2>
+          <p>Elegant finishes, tailored to your brand identity and event goals.</p>
+        </div>
+        <div class="grid three">
+          <article class="card">
+            <h3>Acrylic Trophies</h3>
+            <p>Crystal-clear acrylic with precision engraving and gold accents.</p>
+            <span class="tag">Starting ₹800</span>
+          </article>
+          <article class="card">
+            <h3>Wooden Trophies & Plaques</h3>
+            <p>Warm, rich textures with deep carving and inlays.</p>
+            <span class="tag">Starting ₹600</span>
+          </article>
+          <article class="card">
+            <h3>Decorative Gift Items</h3>
+            <p>Modern desk décor and gifting pieces in wood/acrylic mixes.</p>
+            <span class="tag">Starting ₹500</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="calculator" class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Custom Pricing Calculator</h2>
+          <p>Get a live estimate tailored to your product needs.</p>
+        </div>
+        <div class="calculator">
+          <form id="pricing-form" class="form" aria-label="Pricing enquiry form">
+            <div class="form-grid">
+              <label>
+                Customer Name
+                <input type="text" id="customer-name" placeholder="Your name" autocomplete="name" />
+              </label>
+              <label>
+                Phone / Email
+                <input type="text" id="customer-contact" placeholder="Contact details" autocomplete="email" />
+              </label>
+              <label>
+                Product Category
+                <select id="product-category">
+                  <option value="acrylic">Acrylic Trophy</option>
+                  <option value="wooden">Wooden Trophy & Plaque</option>
+                  <option value="decorative">Decorative Gift Item</option>
+                </select>
+              </label>
+              <label>
+                Material
+                <select id="material">
+                  <option value="acrylic">Acrylic</option>
+                  <option value="wood">Wood</option>
+                  <option value="mixed">Mixed</option>
+                </select>
+              </label>
+              <label>
+                Size
+                <select id="size">
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                  <option value="custom">Custom</option>
+                </select>
+              </label>
+              <label>
+                Quantity
+                <input type="number" id="quantity" min="1" value="1" />
+              </label>
+              <label>
+                Engraving Required
+                <select id="engraving">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </label>
+              <label class="full">
+                Custom Description
+                <textarea id="custom-notes" rows="4" placeholder="Share design details, logo requirements, or event theme"></textarea>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="cta" id="whatsapp-price">Get Price on WhatsApp</button>
+              <button type="button" class="ghost" id="whatsapp-confirm">Confirm on WhatsApp</button>
+              <button type="button" class="ghost" id="download-pdf">Download Quotation (PDF)</button>
+            </div>
+          </form>
+          <aside class="summary">
+            <h3>Estimate Summary</h3>
+            <div class="price-range" id="price-range">Estimated Price Range: ₹0 – ₹0</div>
+            <p class="note">Final price may vary based on design complexity.</p>
+            <div class="summary-details" id="summary-details"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Gallery</h2>
+          <p>Discover premium finishes, modern silhouettes, and bespoke engraving.</p>
+        </div>
+        <div class="grid gallery">
+          <div class="gallery-item">Acrylic Executive Award</div>
+          <div class="gallery-item">Wooden Champion Plaque</div>
+          <div class="gallery-item">Mixed-Material Gift Box</div>
+          <div class="gallery-item">Custom Corporate Trophy</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Why Choose Us</h2>
+          <p>Our craft combines premium materials with attentive, personal service.</p>
+        </div>
+        <div class="grid three">
+          <article class="card minimal">
+            <h3>Design-First Process</h3>
+            <p>Every project begins with a personalised mock-up for quick approvals.</p>
+          </article>
+          <article class="card minimal">
+            <h3>Reliable Timelines</h3>
+            <p>Flexible production slots with rush delivery options for urgent events.</p>
+          </article>
+          <article class="card minimal">
+            <h3>Premium Materials</h3>
+            <p>Sustainably sourced wood, polished acrylic, and protective finishes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact">
+        <div>
+          <div class="section-heading">
+            <h2>Let’s craft something memorable</h2>
+            <p>Share your vision and we’ll deliver a tailored quotation within 24 hours.</p>
+          </div>
+          <div class="contact-details">
+            <p><strong>Studio:</strong> Crafted Honors, 24 Artisan Avenue, Mumbai</p>
+            <p><strong>Phone:</strong> +91 90000 00000</p>
+            <p><strong>Email:</strong> hello@craftedhonors.in</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <h3>Quick Request</h3>
+          <p>Send your requirement directly on WhatsApp for instant assistance.</p>
+          <button class="cta" id="contact-whatsapp">Order on WhatsApp</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">
+          <span>Crafted</span> Honors
+        </div>
+        <p>Custom gifting & awards studio delivering premium finishes across India.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>+91 90000 00000</p>
+        <p>hello@craftedhonors.in</p>
+      </div>
+      <div>
+        <h4>Business Hours</h4>
+        <p>Mon - Sat: 10:00 AM - 7:00 PM</p>
+        <p>Sunday: By appointment</p>
+      </div>
+    </div>
+    <p class="footnote">© 2024 Crafted Honors. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-NaWTHo/8YCBYJ8ZqInDV22SZU+0yj8bfIoLRbQq8s27Qv4lfr1u8Q0C2T5nFTlZQYjQBKYbDQ2CjE4b0T1aw/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>
